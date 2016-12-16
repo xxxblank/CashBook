@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:id="@+id/title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/add_list_title_activity"
+            android:text="加 一 笔"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/below_title"
+        android:layout_below="@+id/title">
+        <Spinner
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:id="@+id/spinner_expenditure"
+            android:layout_centerVertical="true"
+            ></Spinner>
+        <EditText
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:id="@+id/editText_price"
+            android:singleLine="true"
+            android:numeric="integer"
+            android:layout_toRightOf="@+id/spinner_expenditure"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/et"
+            android:gravity="end"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/below_title"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relative">
+        <EditText
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:hint="备注......"
+            android:layout_centerInParent="true"
+            android:id="@+id/editText_remark"
+            android:background="@drawable/et"
+            android:gravity="left|top" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_marginTop="20dp">
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_list_yes"
+            android:text="确  定"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

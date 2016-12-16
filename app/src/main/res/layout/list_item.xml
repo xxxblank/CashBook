@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/list_item_img"
+        android:src="@drawable/life"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="花钱的事件"
+        android:textSize="20sp"
+        android:id="@+id/expenditure_thing"
+        android:layout_toRightOf="@+id/list_item_img"
+        android:layout_alignTop="@+id/list_item_img"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="花钱的数目"
+        android:id="@+id/expenditure_price"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/expenditure_thing"
+        android:layout_alignTop="@+id/expenditure_thing"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expenditure_note"
+        android:text="备注"
+        android:textSize="20sp"
+        android:layout_below="@+id/expenditure_thing"
+        android:layout_toRightOf="@+id/list_item_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
