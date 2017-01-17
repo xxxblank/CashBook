@@ -62,6 +62,8 @@ public class ExpenditureFragment extends Fragment {
     @Bind(R.id.borrow_out)
     RelativeLayout borrow_out;
 
+
+
     private ArrayAdapter adapter_data;
     private MyAdapterOfExpenditure adapter;
     private List<String> list_data;
